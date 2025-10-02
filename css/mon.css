@@ -259,6 +259,32 @@ main h2 {
   }
 }
 @media (max-width: 480px) {
+  .imglogo {
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;  /* 👈 Use 50% em vez de 44% */
+    transform: translateX(-55%);
+    z-index: 10;
+}
+
+.imglogo img {
+    width: 500px;  /* Ajustado para caber melhor */
+    height: auto;
+}
+
+.topo {
+    min-height: 140px;  /* Ajuste se necessário */
+}
+
+.topo ul {
+    gap: 10px;
+    margin-top: 90px;  /* Garante espaço para a logo */
+}
+
+.topo ul li a {
+    font-size: 15px;
+    font-weight: bold;
+}
   .prato-do-chefe {
       padding: 0 15px;
       margin: 20px auto;
@@ -287,7 +313,8 @@ main h2 {
       right: 15px;
   }
 }
-
+  
+  
 @media (min-width: 769px) and (max-width: 1024px) {
   .conteudo-prato {
       gap: 25px;
