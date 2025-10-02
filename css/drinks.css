@@ -13,22 +13,21 @@ body {
     min-height: 120px;
    
   }
-  
   .imglogo {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-  }
-  
-  .imglogo {
-    position: absolute;
-    top: 20px;            /* distância do topo */
-    left: 50%;            /* joga pro meio */
-    transform: translateX(-50%); /* corrige o alinhamento */
+    top: 20px;            
+    left: 50%;            
+    transform: translateX(-50%);
     z-index: 10;
 }
 
+  .imglogo img {
+    width: 250px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+  }
+  
   .topo ul {
     list-style: none;
     display: flex;
@@ -90,13 +89,12 @@ font-size: 20px;
 .voltaraoCardapio h2:hover {
    transform: scale(1.05);
 }
-.cardapio {
+.drinks {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 30px;
-}
- 
+  } 
 .card {
     background-color: #222;
     border-radius: 10px;
@@ -191,7 +189,6 @@ font-size: 20px;
 .footer-item a:hover {
     text-decoration: underline;
 }
-
 .fundo{
     color: #d1d1d1;
     padding: 20px 0;
@@ -351,13 +348,13 @@ font-size: 20px;
     h1 {
         font-size: 1.6rem;
     }
-    
-    .voltaraoCardapio h2 {
-        font-size: 15px;
-    }
     .voltaraoCardapio img{
         margin-left: 5px;
     }
+    .voltaraoCardapio h2 {
+        font-size: 15px;
+    }
+    
     .cardapio {
         padding: 12px;
     }
