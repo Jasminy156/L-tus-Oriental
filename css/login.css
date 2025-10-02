@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body
+{
+    background-color: rgb(17, 17, 17);
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container
+{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(212, 175, 55, 0.349);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-left: -30%;
+    margin-top: -15%;
+    box-shadow: 0 18px 30px rgba(0,0,0,0.6),
+     0 0 20px rgba(212, 175, 55, 0.514);
+}
+
+h1
+{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-shadow: 0 18px 30px rgba(0,0,0,0.6), 0 0 18px rgba(212, 175, 55, 0.514);
+}
+
+.input-container
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    
+}
+
+.input-container input 
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255,255, 2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-container input::placeholder
+{
+    color: #ffffff;
+}
+
+.input-container img
+{
+    position: absolute;
+    right: 24px;
+    top: 20%;
+    margin-top: 5px;
+}
+
+.input-container a
+{
+    font-size: 16px;
+    margin-top: 30px;
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.input-container a:hover
+{
+    text-decoration: underline;
+}
+
+.submit-button
+{ 
+    width: 100%;
+    height: 50px;
+    background-color: rgba(189, 156, 47, 0.904);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+a{
+    color: #fff;
+    text-decoration: underline;
+    background-color: none;
+}
+
+.submit-button:hover
+{
+    background-color: rgb(216, 183, 73);
+}
+
+.register-link p 
+{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+.register-link p a
+{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-link p a:hover
+{
+    text-decoration: underline;
+}
+
+.container1 img
+{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-10%, -50%);
+  width: 600px;
+  height: auto;
+}
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .container1 img {
+        width: 400px;
+        opacity: 0.6;
+    }
+}
+
+/* Tablets menores (600px - 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container {
+        max-width: 380px;
+        padding: 25px 30px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    .container1 img {
+        width: 300px;
+        opacity: 0.4;
+    }
+    
+    .input-container {
+        margin: 25px 0;
+    }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 25px 25px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+
+    .input-container {
+        height: 48px;
+        margin: 20px 0;
+    }
+    
+    .input-container input {
+        font-size: 15px;
+        padding: 15px 40px 15px 15px;
+    }
+    
+    .input-container img {
+        width: 18px;
+        height: 18px;
+        right: 18px;
+    }
+    
+    .input-container a {
+        font-size: 13px;
+        text-decoration: underline;
+    }
+    
+    .submit-button {
+        height: 48px;
+        font-size: 15px;
+    }
+    
+    .register-link p,
+    .register-link p a {
+        font-size: 14px;
+    }
+    
+    /* Imagem do dragão menos visível em mobile */
+    .container1 {
+        opacity: 0.3;
+    }
+    
+    .container1 img {
+        width: 250px;
+    }
+}
+
+/* Celulares pequenos (até 400px) */
+@media (max-width: 400px) {
+    .container {
+        padding: 20px 20px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    .input-container {
+        height: 45px;
+        margin: 18px 0;
+    }
+    
+    .input-container input {
+        font-size: 14px;
+        padding: 12px 35px 12px 12px;
+    }
+    
+    .input-container img {
+        width: 16px;
+        height: 16px;
+        right: 15px;
+    }
+    
+    .submit-button {
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .register-link p,
+    .register-link p a {
+        font-size: 13px;
+    }
+    
+    /* Esconder a imagem do dragão em telas muito pequenas */
+    .container1 {
+        display: none;
+    }
+}
+
+/* Telas grandes (acima de 1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 450px;
+        padding: 35px 45px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    .container1 img {
+        width: 700px;
+    }
+}
+
+/* Modo paisagem em celulares */
+@media (max-height: 600px) and (orientation: landscape) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px 25px;
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .input-container {
+        margin: 15px 0;
+        height: 42px;
+    }
+    
+    .submit-button {
+        height: 42px;
+        margin-top: 15px;
+    }
+    
+    .register-link {
+        margin-top: 15px;
+    }
+    
+    .container1 {
+        display: none;
+    }
+}

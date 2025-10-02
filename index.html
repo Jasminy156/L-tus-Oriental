@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Lótus Oriental - restaurante com culinária asiática autêntica. Descubra o melhor do Japão, China e Coreia.">
+  <link rel="stylesheet" href="css/style3.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Lótus Oriental</title>
+</head>
+<body>
+  <header>
+    <div class="topo">
+  <div class="imglogo">
+    <a href="index.html"><img src="./img/logo-branco.png" alt="logo"></a>
+  </div>
+
+  <ul>
+    <li><a href="cardapio.html">Cardápio</a></li>
+    <li><a href="#final">Conheça nossos restaurantes!</a></li>
+    <li><a href="cardapio.html">Peça e Retire ou Delivery</a></li>
+    <li><a href="login.html">Login/Cadastro</a></li>
+  </ul>
+</div>
+
+  </header>
+
+  <!-- ================== PRATO DO CHEFE ================== -->
+  <div class="container-fluid prato-do-chefe">
+    <div class="conteudo-prato">
+      
+      <!-- Imagem à esquerda -->
+      <div class="prato-img">
+        <img src="img/Ramenn.png" alt="Prato do Chefe" class="ramenn">
+      </div>
+
+      <!-- Texto à direita -->
+      <div class="prato-texto">
+        <h2>Prato do Chefe</h2>
+        <p>Esse prato é um ramen artesanal servido em caldo rico e encorpado, fumegante e aromático, trazendo equilíbrio perfeito entre sabor e apresentação.</p>
+
+        <!-- Botão Ler Mais -->
+        <button id="lerMais">Ler mais</button>
+
+        <!-- Texto extra -->
+        <div id="textoExtra" class="texto-extra">
+          <p><strong>Recomendado por Chefs renomados:</strong></p>
+          <ul>
+            <li>Ivan Orkin (Chef norte-americano especialista em ramen, dono do Ivan Ramen em Tóquio e Nova Iorque)</li>
+            <li>Masaharu Morimoto (ex-Iron Chef japonês, famoso por sua fusão da cozinha oriental e ocidental)</li>
+            <li>Shigetoshi “Jack” Nakamura (considerado mestre do ramen, fundador do Nakamura Ramen em Nova Iorque)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+   const lerMais = document.getElementById("lerMais");
+  const textoExtra = document.getElementById("textoExtra");
+
+  lerMais.addEventListener("click", () => {
+    textoExtra.classList.toggle("ativo");
+    lerMais.textContent = textoExtra.classList.contains("ativo") ? "Ler menos" : "Ler mais";
+});
+
+  </script>
+
+
+  <div class="container-fluid my-5" id="final">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="sobrenos">
+          <div class="carousel-container">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/fachada.jpg" class=" w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/caixa.jpg" class=" w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/mesas.jpg" class="w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-6 col-sm-12">
+        <h1 class="sobrenos">Conheça nossos Restaurantes!</h1>
+        <ul class="sobrenos">
+          <li>O Lótus Oriental é uma junção de tradição e modernidade.
+            Trazendo pratos tradicionais asiáticos perfeito de sabores.
+          </li>
+          <p>
+          <li>Descubra o melhor da culinária oriental no conforto da sua casa ou em nosso restaurante. Com um cardápio
+            que une sabores autênticos do Japão, China e Coreia, oferecemos pratos preparados com ingredientes frescos
+            e técnicas tradicionais para uma experiência gastronômica única. Peça pelo nosso delivery ou venha nos
+            visitar e mergulhe em uma viagem de sabores irresistíveis.</li>
+            </p>
+          </ul>
+        <div class="sobre">
+          <ul class="sobre">
+            <li><a class="recomendado">Funcionamos de segunda a sábado.</a></li>
+            <li><a class="recomendado">Das 11 até 22 hrs da noite.</a></li>
+            <li><a class="recomendado">Fica localizado na:</a></li>
+            <li><a class="recomendado">R. Amaro Coelho, 40 - Barra da Lagoa-Florianópolis-SC-Brasil</a></li>
+            <li><a class="recomendado">Nos siga nas redes sociais!</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+        <img src="img/tiktok.svg">
+        <img src="img/instagram.svg">
+        <img src="img/zap.svg">
+        </div>
+    </div>
+  </div>
+  <div class="voltar">
+    <button id="voltar">↑</button>
+  </div>
+  <script>
+      const voltar = document.getElementById("voltar");
+
+  window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    voltar.classList.remove("hidden");
+  } else {
+    voltar.classList.add("hidden");
+  }
+};
+
+ document.getElementById("voltar").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+  </script>
+
+  <footer>
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d442.0745695466117!2d-48.42795839694418!3d-27.57502881579561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273f6876b346a5%3A0xc0de5844fff69863!2sOyama%20Sushi%20%7C%20Florian%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1756988552175!5m2!1spt-BR!2sbr"
+      width="100%" 
+      height="270" 
+      style="border:0;" 
+      allowfullscreen="" 
+      margin="0"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+      
+    </iframe>
+
+    <div class="footer-container">
+      <div class="footer-item">
+        <h4>Quem Somos</h4>
+        <p>Conheça nossa história, valores e propósito.</p>
+      </div>
+      <div class="footer-item">
+        <h4>Restaurantes</h4>
+        <p>Conheça nossas unidades e descubra novos sabores da gastronomia oriental.</p>
+      </div>
+      <div class="footer-item">
+        <h4>Trabalhe Conosco</h4>
+        <p>Faça parte do nosso time e cresça junto com a gente.</p>
+      </div>
+      <div class="footer-item">
+        <h4>Sustentabilidade</h4>
+        <p>Compromisso com o meio ambiente e impacto social positivo.</p>
+      </div>
+      <div class="footer-item">
+        <h4>Descubra</h4>
+        <p>Novidades, lançamentos e promoções exclusivas do nosso cardápio.</p>
+      </div>
+      <div class="footer-item">
+        <h4>Contato</h4>
+        <p><a href="#">Tiktok</a> | <a href="#">Instagram</a> | <a href="#">WhatsApp</a></p>
+      </div>
+    </div>
+
+    <div class="container-fluid fundo">
+      <div class="row">
+        <div class="col">
+         <p>&copy; 2025 - Restaurante Oriental. Todos os direitos reservados</p> 
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </footer>
+
+  <script src="css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
