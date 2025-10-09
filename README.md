@@ -1,3 +1,4 @@
+Link do site: https://lotus-oriental.vercel.app/index.html
 🍱 Projeto Fictício — Apresentação SENAI
 
 Este projeto foi desenvolvido como parte de uma **apresentação prática** do curso de **Informática para Internet** no **SENAI**.  
